@@ -10,11 +10,11 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
 import os
-from dotenv import load_dotenv
-
-load_dotenv ("C:\\Users\\visot\\PycharmProjects\\EnvironmentVariables\\.env")
-ADMIN_EMAIL = os.getenv("angela@email.com")
-ADMIN_PASSWORD=os.getenv("123456")
+# from dotenv import load_dotenv
+#
+# load_dotenv ("C:\\Users\\visot\\PycharmProjects\\EnvironmentVariables\\.env")
+# ADMIN_EMAIL = os.getenv("angela@email.com")
+# ADMIN_PASSWORD=os.getenv("123456")
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
