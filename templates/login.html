@@ -1,5 +1,5 @@
-{% extends 'bootstrap/base.html' %}
-{% import "bootstrap/wtf.html" as wtf %}
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_form, render_field %}
 
 {% block content %}
 {% include "header.html" %}
@@ -30,7 +30,8 @@
           {% endfor %}
         {% endif %}
       {% endwith %}
-        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+        {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+
       </div>
     </div>
   </div>
