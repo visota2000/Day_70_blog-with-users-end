@@ -12,7 +12,7 @@ from flask_gravatar import Gravatar
 import os
 from dotenv import load_dotenv
 
-load_dotenv("C:\Users\visot\PycharmProjects\EnvironmentVariables/.env")
+load_dotenv("C:\Users\visot\PycharmProjects\EnvironmentVariables\.env")
 ADMIN_EMAIL = os.getenv("angela@email.com")
 ADMIN_PASSWORD=os.getenv("123456")
 
